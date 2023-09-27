@@ -40,7 +40,7 @@ function getRandomImages() {
             randomImages.push(randomIndex);
         }
     }
-    return randomImages.map(index => '../anime_data/animeimage/' + index + '.png');
+    return randomImages;
 }
 
 function loadRandomImages() {
@@ -53,13 +53,17 @@ function loadRandomImages() {
     const randomImageUrls = getRandomImages();
 
     // ランダムな画像をHTMLに追加
-    randomImageUrls.forEach(imageUrl => {
+    randomImageUrls.forEach(imageUrlNum => {
+        const imgTitle = document.createElement("h2");
         const imgElement = document.createElement("img");
-        imgElement.src = imageUrl;
+        imgTitle.innerHTML = csvArray[imageUrlNum][1];
+        imgElement.src = '../anime_data/animeimage/' + imageUrlNum + '.png';
         imgElement.alt = "animeimage";
+        imageContainer.appendChild(imgTitle);
         imageContainer.appendChild(imgElement);
     });
 }
 
 // ページ読み込み時に最初のランダムな画像を表示
 window.onload = loadRandomImages;
+
