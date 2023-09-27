@@ -35,7 +35,7 @@ function getRandomImages() {
     // ランダムに3つの画像を選択
     const randomImages = [];
     while (randomImages.length < 3) {
-        const randomIndex = Math.floor(Math.random() * imageUrlsNum);
+        const randomIndex = Math.floor(Math.random() * imageUrlsNum) + 1;
         if (!randomImages.includes(randomIndex)) {
             randomImages.push(randomIndex);
         }
