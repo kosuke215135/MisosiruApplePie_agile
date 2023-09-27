@@ -29,7 +29,7 @@ for (let i = 0; i < lines.length; ++i) {
 console.log(csvArray);
 
 // 19枚の画像URLのリスト（実際のURLに置き換えてください）
-const imageUrlsNum = csvArray.length;
+const imageUrlsNum = csvArray.length - 1;
 
 function getRandomImages() {
     // ランダムに3つの画像を選択
