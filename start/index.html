@@ -23,15 +23,18 @@
   </header>
 
 <body background="./image/Background_6.jpg">
-  <script src="./index.js">
-  </script>
+  <article>
+    <audio src="./image/gatya_audio.mp3" id="gatyaSe"></audio>
+  </article>
+
+  <script src="./index.js"></script>
 
   <main>
       <!-- <img src="./image/gachagacha.png" alt="ガチャのUIです" class="custom-image" height="500" vspace="30"> -->
       <!-- ガチャのGIF -->
-      <img src="./image/gatyagatya_toukago.GIF" width="500" id="gifImage" style="display: none;"> 
+      <img src="./image/gatya.gif" width="250" id="gifImage" style="display: none;"> 
       <!-- ガチャを回すボタン -->
-      <button class="gatyabutton" type="button" onclick="playGif()">ガチャを回す</button>
+      <button class="gatyabutton" type="button" onclick="playGif();playSE();stopBGM();playGatya()" >ガチャを回す</button>
 
       <!-- ボタンが押下されると、GIFが動く -->
       <script>
