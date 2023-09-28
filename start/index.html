@@ -11,7 +11,7 @@
         display: block; /* 画像をブロック要素として扱う */
         margin: auto;    /* 画像を中央に配置 */
       }
-    
+
       /* 特定の画像のスタイル */
       .custom-image {
         width: 30%; /* 幅を50%に設定 */
@@ -23,12 +23,30 @@
   </header>
 
 <body background="./image/Background_6.jpg">
-  <script src="./index.js">
-  </script>
+  <article>
+    <audio src="./image/gatya_audio.mp3" id="gatyaSe"></audio>
+  </article>
+
+  <script src="./index.js"></script>
 
   <main>
-      <img src="./image/gachagacha.png" alt="ガチャのUIです" class="custom-image" height="500" vspace="30">
-      <button class="gatyabutton" type="button" onclick=location.href='./gatya.html'>ガチャを回す</button>
+    　<div class="center">
+      <video type="video/webm" src="./image/gatyagatya.mov" width="250" muted></video>
+      </div>
+      <!-- <img src="./image/gachagacha.png" alt="ガチャのUIです" class="custom-image" height="500" vspace="30"> -->
+      <!-- ガチャのGIF -->
+      <!-- <img src="./image/gatya.gif" width="250" id="gifImage" style="display: none;">  -->
+      <!-- ガチャを回すボタン -->
+      <button id="btn_play" class="gatyabutton" type="button" onclick="playSE();stopBGM();playGatya()" >ガチャを回す</button>
+
+      <!-- ボタンが押下されると、GIFが動く -->
+      <!-- <script>
+        function playGif() {
+          var gifImage = document.getElementById('gifImage');
+          gifImage.style.display = 'block';
+          gifImage.src = gifImage.src; // Start the GIF animation
+        }
+      </script> -->
 
   </main>
 </body>

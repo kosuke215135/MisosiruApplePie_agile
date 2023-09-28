@@ -80,3 +80,7 @@ h1 {
     font-size: 4vh;
     width: 90vw;
 }
+
+.center{
+    text-align: center;
+   }
