@@ -59,6 +59,12 @@ function loadRandomImages() {
         imgTitle.innerHTML = csvArray[imageUrlNum][1];
         imgElement.src = '../anime_data/animeimage/' + imageUrlNum + '.png';
         imgElement.alt = "animeimage";
+
+        // 画像をクリックした時のアクションを設定（別のページに遷移）
+        imgElement.addEventListener('click', () => {
+          window.location.href = csvArray[imageUrlNum][2];  // リンク先のURLを設定
+        });
+
         imageContainer.appendChild(imgTitle);
         imageContainer.appendChild(imgElement);
     });
