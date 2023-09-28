@@ -20,3 +20,14 @@ function stopBGM() {
   bgm.pause(); // BGMの再生を停止
   bgm.currentTime = 0; // 再生位置を初期化
 }
+
+window.addEventListener('DOMContentLoaded', function(){
+
+  const btn_play = document.getElementById("btn_play");
+
+  const videoElement = document.querySelector("video");
+
+  btn_play.addEventListener("click", e => {
+    videoElement.play();
+  });
+});

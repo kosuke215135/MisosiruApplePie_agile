@@ -30,20 +30,23 @@
   <script src="./index.js"></script>
 
   <main>
+    　<div class="center">
+      <video type="video/webm" src="./image/gatyagatya.mov" width="250" muted></video>
+      </div>
       <!-- <img src="./image/gachagacha.png" alt="ガチャのUIです" class="custom-image" height="500" vspace="30"> -->
       <!-- ガチャのGIF -->
-      <img src="./image/gatya.gif" width="250" id="gifImage" style="display: none;"> 
+      <!-- <img src="./image/gatya.gif" width="250" id="gifImage" style="display: none;">  -->
       <!-- ガチャを回すボタン -->
-      <button class="gatyabutton" type="button" onclick="playGif();playSE();stopBGM();playGatya()" >ガチャを回す</button>
+      <button id="btn_play" class="gatyabutton" type="button" onclick="playSE();stopBGM();playGatya()" >ガチャを回す</button>
 
       <!-- ボタンが押下されると、GIFが動く -->
-      <script>
+      <!-- <script>
         function playGif() {
           var gifImage = document.getElementById('gifImage');
           gifImage.style.display = 'block';
           gifImage.src = gifImage.src; // Start the GIF animation
         }
-      </script>
+      </script> -->
 
   </main>
 </body>
